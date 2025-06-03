@@ -16,24 +16,21 @@ Welcome to the **Recipe Finder App** – your one-stop solution for discovering 
 
 ## 🖼️ App Preview
 
-Here's a glimpse of what the app looks like:
+| ![](./images/r1.png) | ![](./images/r2.png) | ![](./images/r3.png) | ![](./images/r4.png) |
+|--------------|--------------|--------------|--------------|
+
+| ![](./images/r5.png) | ![](./images/r6.png) | ![](./images/r7.png) | ![](./images/r8.png) |
+|--------------|--------------|--------------|--------------|
 
 
-|----------|------------|----------------|----------------|
-| ![r1](r1.png) | ![r2](r2.png) | ![r3](r3.png) | ![r4](r4.png) |
-
-
-|----------------|-------------|----------------|--------|
-| ![r5](r5.png) | ![r6](r6.png) | ![r7](r7.png) | ![r8](r8.png) |
-
----
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript
-- **Backend:** Python (Flask/Django)
-- **API Integration:** Edamam / Spoonacular (or custom)
+- **Frontend:** HTML, CSS, React js 
+- **Backend:** Node Js
+- **API Integration:** MealDb
 - **Responsive Design:** Bootstrap / Tailwind CSS
 
 ---
+
 
