@@ -1,0 +1,27 @@
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins';
+}
+
+.app-container 
+{
+    padding: 20px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .app-container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-container {
+        padding: 10px;
+    }
+}

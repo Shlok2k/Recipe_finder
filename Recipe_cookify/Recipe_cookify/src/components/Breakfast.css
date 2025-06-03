@@ -1,0 +1,276 @@
+.breakfast-container {
+    margin: clamp(2rem, 5vw, 4rem) 0rem;
+    padding: 0 clamp(0.5rem, 2vw, 1rem);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.breakfast-container h1 {
+    margin-bottom: clamp(1rem, 3vw, 2rem);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    background: linear-gradient(to right, #FF9800, #FF5722);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 clamp(0.5rem, 2vw, 1rem);
+}
+
+.error-message {
+    color: #ff4444;
+    text-align: center;
+    padding: clamp(1rem, 4vw, 2rem);
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    background-color: #ffebee;
+    border-radius: clamp(5px, 1.5vw, 8px);
+    margin: clamp(1rem, 3vw, 2rem) 0;
+}
+
+@media (max-width: 768px) {
+    .breakfast-container h1 {
+        font-size: clamp(1.8rem, 3.5vw, 2rem);
+    }
+}
+
+.breakfast-section {
+    padding: clamp(1rem, 3vw, 2rem) clamp(0.5rem, 1.5vw, 0.5rem);
+    max-width: min(1200px, 95vw);
+    margin: 0 auto;
+    width: 100%;
+}
+
+.breakfast-section h2 {
+    text-align: center;
+    margin-bottom: clamp(1rem, 3vw, 2rem);
+    color: #333;
+    font-size: clamp(1.3rem, 3vw, 2rem);
+    position: relative;
+    padding-bottom: clamp(0.8rem, 2vw, 1rem);
+}
+
+.breakfast-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(80px, 15vw, 100px);
+    height: 3px;
+    background: linear-gradient(to right, #ff6b6b, #ff8e8e);
+    border-radius: 2px;
+}
+
+/* Splide custom styles */
+.splide__arrow {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: clamp(1.8em, 4vw, 2.5em);
+    height: clamp(1.8em, 4vw, 2.5em);
+    opacity: 0.9;
+    transition: all 0.3s ease;
+    min-width: 44px; /* Ensure minimum touch target size */
+    min-height: 44px; /* Ensure minimum touch target size */
+}
+
+.splide__arrow:hover {
+    background: white;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.splide__arrow svg {
+    fill: #333;
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.splide__pagination__page {
+    background: #ccc;
+    width: clamp(6px, 1.5vw, 8px);
+    height: clamp(6px, 1.5vw, 8px);
+    margin: 0 clamp(2px, 1vw, 4px);
+    transition: all 0.3s ease;
+}
+
+.splide__pagination__page.is-active {
+    background: #ff6b6b;
+    transform: scale(1.2);
+}
+
+/* Loading and Error States */
+.loading-container,
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    padding: clamp(1.5rem, 4vw, 2rem);
+    width: 100%;
+}
+
+.loading {
+    text-align: center;
+    padding: clamp(1rem, 3vw, 2rem);
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    color: #666;
+    background: white;
+    border-radius: clamp(0.8rem, 2vw, 1rem);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: pulse 1.5s infinite;
+    max-width: min(600px, 90%);
+}
+
+.error-message {
+    text-align: center;
+    color: #333;
+    padding: clamp(1rem, 3vw, 2rem);
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    background-color: white;
+    border-radius: clamp(0.8rem, 2vw, 1rem);
+    max-width: min(600px, 90%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+}
+
+.error-message h3 {
+    color: #ff6b6b;
+    margin-bottom: clamp(0.8rem, 2vw, 1rem);
+}
+
+.error-message p {
+    margin-bottom: clamp(1rem, 3vw, 1.5rem);
+    color: #666;
+}
+
+.retry-button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: clamp(0.6rem, 1.5vw, 0.8rem) clamp(1rem, 2.5vw, 1.5rem);
+    border-radius: clamp(0.3rem, 1vw, 0.5rem);
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 120px;
+    min-height: 44px; /* Ensure minimum touch target size */
+}
+
+.retry-button:hover {
+    background: #ff8e8e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add touch-friendly hover states for mobile */
+@media (hover: none) {
+    .splide__arrow:hover {
+        transform: none;
+    }
+    
+    .splide__arrow:active {
+        transform: scale(1.05);
+    }
+    
+    .retry-button:hover {
+        transform: none;
+    }
+    
+    .retry-button:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .breakfast-container h1 {
+        font-size: 2.2rem;
+    }
+
+    .breakfast-section h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .breakfast-container {
+        margin: 3rem 0;
+    }
+
+    .breakfast-container h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .breakfast-section {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .breakfast-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .splide__arrow {
+        width: 2em;
+        height: 2em;
+    }
+
+    .splide__arrow svg {
+        width: 1em;
+        height: 1em;
+    }
+
+    .loading,
+    .error-message {
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .breakfast-container {
+        margin: 2rem 0;
+        padding: 0 0.5rem;
+    }
+
+    .breakfast-container h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .breakfast-section {
+        padding: 1rem 0.5rem;
+    }
+
+    .breakfast-section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .breakfast-section h2::after {
+        width: 80px;
+    }
+
+    .splide__arrow {
+        width: 1.8em;
+        height: 1.8em;
+    }
+
+    .splide__arrow svg {
+        width: 0.9em;
+        height: 0.9em;
+    }
+
+    .loading,
+    .error-message {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .retry-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+        min-width: 100px;
+    }
+} 

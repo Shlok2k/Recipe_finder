@@ -1,0 +1,146 @@
+/* Styles for the Dinner component */
+
+.dinner-section {
+    padding: clamp(1rem, 3vw, 2rem) clamp(0.5rem, 1.5vw, 0.5rem);
+    max-width: min(1200px, 95vw);
+    margin: 0 auto; /* Center the section */
+}
+
+/* Container for the list of recipes */
+.dinner-recipe-list {
+    display: flex; /* Change to flex */
+    overflow-x: auto; /* Add horizontal scrolling */
+    gap: clamp(10px, 2vw, 20px); /* Space between recipe items */
+    margin-top: clamp(10px, 2vw, 20px);
+    padding-bottom: clamp(10px, 1.5vw, 15px); /* Add padding at the bottom for the scrollbar */
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.dinner-recipe-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* Heading styles */
+.dinner-section h2 {
+    text-align: center; /* Center the heading */
+    margin-bottom: clamp(1rem, 3vw, 2rem); /* Space below heading */
+    color: #333; /* Dark text color */
+    font-size: clamp(1.3rem, 3vw, 2rem); /* Font size */
+    position: relative; /* Needed for the underline pseudo-element */
+    padding-bottom: clamp(0.8rem, 2vw, 1rem); /* Space for the underline */
+}
+
+/* Underline for the heading */
+.dinner-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: clamp(80px, 15vw, 100px); /* Width of the underline */
+    height: 3px; /* Height of the underline */
+    background: linear-gradient(to right, #4a90e2, #67b26f); /* Colored gradient */
+    border-radius: 2px;
+}
+
+/* Individual recipe item */
+.dinner-recipe-item {
+    flex: 0 0 auto; /* Prevent items from shrinking or growing, maintain their size */
+    width: clamp(200px, 40vw, 280px); /* Set a fluid width for items */
+    background: white; /* White background */
+    border-radius: clamp(0.8rem, 2vw, 1rem); /* Rounded corners */
+    overflow: hidden; /* Hide overflowing content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transitions */
+    height: 100%; /* Full height */
+    margin: 0 clamp(0.25rem, 1vw, 0.5rem);
+}
+
+.dinner-recipe-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Larger shadow on hover */
+}
+
+/* Container for the image */
+.image-container {
+    width: 100%;
+    height: clamp(140px, 25vw, 200px); /* Fluid height */
+    overflow: hidden;
+    position: relative;
+}
+
+.dinner-recipe-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the area without distortion */
+    transition: transform 0.3s ease; /* Smooth transform on hover */
+}
+
+.dinner-recipe-item:hover img {
+    transform: scale(1.05); /* Slightly zoom in on hover */
+}
+
+/* Link styling */
+.dinner-recipe-item a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+    display: block; /* Make the link a block element */
+    height: 100%;
+    min-height: 44px; /* Ensure minimum touch target size */
+}
+
+/* Heading inside recipe item */
+.dinner-recipe-item h3 {
+    text-align: center; /* Center the text */
+    padding: clamp(0.6rem, 2vw, 1rem); /* Add padding */
+    margin: 0; /* Remove default margin */
+    color: #333; /* Dark text color */
+    font-size: clamp(0.85rem, 2vw, 1rem); /* Font size */
+    line-height: 1.4; /* Line height */
+    min-height: 3.5em; /* Minimum height */
+    display: flex; /* Use flexbox for vertical centering */
+    align-items: center; /* Vertically center text */
+    justify-content: center; /* Horizontally center text */
+    word-break: break-word;
+}
+
+/* Add touch-friendly hover states for mobile */
+@media (hover: none) {
+    .dinner-recipe-item:hover {
+        transform: none;
+    }
+    
+    .dinner-recipe-item:hover img {
+        transform: none;
+    }
+    
+    .dinner-recipe-item:active {
+        transform: translateY(-2px);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dinner-section {
+        padding: 1.5rem 0.5rem; /* Adjust padding for tablets/mobile */
+    }
+
+    .dinner-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .dinner-section {
+        padding: 1rem 0.5rem; /* Adjust padding for smaller mobile screens */
+    }
+
+    .dinner-section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+} 

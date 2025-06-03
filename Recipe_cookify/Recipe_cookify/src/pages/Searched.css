@@ -1,0 +1,106 @@
+.searched-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Loading State */
+.cuisine-skeleton {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Error State */
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.error-message {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+.error-message h3 {
+    color: #e74c3c;
+    margin-bottom: 1rem;
+}
+
+.retry-button {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.retry-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .searched-container,
+    .cuisine-skeleton {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.5rem;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .searched-container,
+    .cuisine-skeleton {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        padding: 0.6rem;
+    }
+
+    .error-message {
+        padding: 1.5rem;
+    }
+
+    .retry-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .searched-container,
+    .cuisine-skeleton {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    .error-message {
+        padding: 1rem;
+    }
+
+    .error-message h3 {
+        font-size: 1.1rem;
+    }
+
+    .retry-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+}
