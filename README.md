@@ -27,9 +27,9 @@ Welcome to the **Recipe Finder App** – your one-stop solution for discovering 
 ## 🛠️ Tech Stack
 
 - **Frontend:** HTML, CSS, React js 
-- **Backend:** Node Js
+- **Backend:**  JavaScript
 - **API Integration:** MealDb
-- **Responsive Design:** Bootstrap / Tailwind CSS
+- **Responsive Design:** CSS
 
 ---
 
