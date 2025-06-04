@@ -1,4 +1,4 @@
-# 🥗 Recipe Finder App
+# 🥗 Recipe Hub
 
 Welcome to the **Recipe Finder App** – your one-stop solution for discovering delicious recipes using the ingredients you already have at home! No more confusion or last-minute grocery runs – just smart cooking, made simple and fun.
 
