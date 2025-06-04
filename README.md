@@ -1,82 +1,79 @@
-🍽️ Recipe Hub-
+# 🍽️ Recipe Hub
 
-The Recipe App is a modern and user-friendly web application that allows users to search, explore, and view cooking recipes using the MealDB API. Designed with simplicity and responsiveness in mind, this app is perfect for food lovers who want to discover new meals with ease.
-
-✨ Project Description-
-
-The Recipe App helps users:
-Search for meal recipes by name.
-View meal details including image, ingredients, and cooking instructions.
-Browse delicious meals from various cuisines.
-Enjoy a clean, responsive, and easy-to-navigate interface.
-This project was built as a part of my web development learning journey using React.js and API integration.
-
-🛠️ Tech Stack Used-
-
-👨‍💻 Frontend:
-HTML – for page structure.
-CSS – for styling and layout.
-React.js – for building the dynamic user interface.
-
-⚙️ Backend Logic:
-JavaScript – used in React for logic, state management, and DOM manipulation.
-
-## 🖼️ App Preview
-
-| ![](./images/r1.png) | ![](./images/r2.png) | ![](./images/r3.png) | ![](./images/r4.png) |
-|--------------|--------------|--------------|--------------|
-
-| ![](./images/r5.png) | ![](./images/r6.png) | ![](./images/r7.png) | ![](./images/r8.png) |
-|--------------|--------------|--------------|--------------|
-
-
-
-##🔗 API Integration:
-MealDB API – used to fetch real-time meal data like names, images, ingredients, and instructions.
-
-📱 Responsive Design:
-Achieved using CSS media queries to ensure proper layout on mobile, tablet, and desktop devices.
-
-🚀 Key Features-
-
-✅ Search Functionality – Find meals by typing keywords.
-✅ Dynamic Meal Display – Automatically fetches and shows recipes from API.
-✅ Recipe Details View – Shows ingredients, instructions, and a meal thumbnail.
-✅ Responsive UI – Works perfectly on all screen sizes.
-✅ Modern Design – Clean and attractive UI built with React components.
-
-📦 How to Run Locally-
-
-Follow these steps to run the project on your local machine:
-
-Clone the repository
-
-bash
-
-git clone https://github.com/your-username/recipe-app.git
-Navigate to the project directory
-
-bash
-
-cd recipe-app
-Install the dependencies
-
-bash
-
-npm install
-Start the React development server
-
-bash
-
-npm start
-Open http://localhost:3000 in your browser to use the app.
-
-🌐 API Used-
-
-API Name: TheMealDB API
-Description: Free JSON API for meals and recipes.
-Example Endpoint: https://www.themealdb.com/api/json/v1/1/search.php?s=chicken.
+**Discover, Cook, and Enjoy!**  
+Recipe Hub is a modern and user-friendly web application that helps food lovers search, explore, and view delicious recipes with ease. Powered by the [MealDB API](https://www.themealdb.com/), it offers a clean, responsive interface built with React.
 
 ---
 
+## ✨ What You Can Do
 
+- 🔍 **Search Recipes** by meal name
+- 🍛 **View Ingredients** and cooking instructions
+- 🌍 **Explore Cuisines** from around the world
+- 📱 **Enjoy a Responsive Design** that works on any device
+
+This project was built as part of my web development learning journey, focusing on **React.js** and **API integration**.
+
+---
+
+## 🧑‍🍳 Preview
+
+| ![](./images/r1.png) | ![](./images/r2.png) | ![](./images/r3.png) | ![](./images/r4.png) |
+|----------------------|----------------------|----------------------|----------------------|
+
+| ![](./images/r5.png) | ![](./images/r6.png) | ![](./images/r7.png) | ![](./images/r8.png) |
+|----------------------|----------------------|----------------------|----------------------|
+
+---
+
+## 🛠️ Tech Stack
+
+### 👨‍💻 Frontend
+- `HTML` – Page structure  
+- `CSS` – Styling and layout  
+- `React.js` – Dynamic UI and components
+
+### ⚙️ Backend Logic
+- `JavaScript` – React logic, state management, and API calls
+
+---
+
+## 🔗 API Integration
+
+- 📡 **API Name:** [TheMealDB API](https://www.themealdb.com/api.php)  
+- 📦 **Purpose:** Fetch real-time meal data (name, ingredients, instructions, images)  
+- 🔗 **Example Endpoint:**  
+  `https://www.themealdb.com/api/json/v1/1/search.php?s=chicken`
+
+---
+
+## 🚀 Key Features
+
+- ✅ **Search Functionality** – Find meals instantly by typing keywords  
+- ✅ **Dynamic Recipe Display** – Recipes are fetched from the API in real time  
+- ✅ **Detailed Recipe View** – See images, ingredients, and how to cook the meal  
+- ✅ **Responsive UI** – Works seamlessly on desktop, tablet, and mobile  
+- ✅ **Modern Look & Feel** – Minimal, clean, and intuitive design
+
+---
+
+## 📱 Responsive Design
+
+Crafted with mobile-first principles using **CSS media queries** to ensure optimal performance and appearance across all devices.
+
+---
+
+## 📦 How to Run Locally
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/recipe-app.git
+
+# 2. Navigate into the project directory
+cd recipe-app
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm start
